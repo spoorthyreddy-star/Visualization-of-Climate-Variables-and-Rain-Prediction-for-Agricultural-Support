@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature 9: Temperature by Time of Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background:#1c2a39; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    table, th, td { border: 1px solid rgba(255,255,255,0.3); border-collapse: collapse; }
+  </style>
+</head>
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white">Feature 9: Temperature by Time of Day</h2>
+
+  <div class="viz-container">
+    <!-- Tableau Visualization -->
+    <div class="tableauPlaceholder" id="viz1756784822345" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="Temperature by Time of Day"
+            src="https://public.tableau.com/static/images/B9/B9_17567656518530/TemperaturebyTimeofDay/1_rss.png"
+            style="border: none"/>
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+        <param name="embed_code_version" value="3"/>
+        <param name="site_root" value=""/>
+        <param name="name" value="B9_17567656518530/TemperaturebyTimeofDay"/>
+        <param name="tabs" value="no"/>
+        <param name="toolbar" value="yes"/>
+        <param name="static_image" value="https://public.tableau.com/static/images/B9/B9_17567656518530/TemperaturebyTimeofDay/1.png"/>
+        <param name="animate_transition" value="yes"/>
+        <param name="display_static_image" value="yes"/>
+        <param name="display_spinner" value="yes"/>
+        <param name="display_overlay" value="yes"/>
+        <param name="display_count" value="yes"/>
+        <param name="language" value="en-US"/>
+      </object>
+    </div>
+
+    <!-- Climate Interpretation -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌤 Climate Interpretation</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>Temperature increases steadily throughout the day, showing a clear linear trend.</li>
+      <li>Days before rainfall (orange points) are slightly cooler, indicating moisture buildup.</li>
+      <li>Reflects a semi-humid, warm climate with predictable diurnal temperature variation.</li>
+      <li>Consistent daily warming supports balanced evapotranspiration and efficient crop metabolism.</li>
+      <li>Predictable heating-cooling cycles create favorable growing conditions for multiple crop types.</li>
+    </ul>
+
+    <!-- Climatic Insights -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🔍 Climatic Insights</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>Gradual daytime warming enhances photosynthetic activity and growth rates.</li>
+      <li>Pre-rain cooling supports humidity accumulation and soil moisture preservation.</li>
+      <li>Stable temperature progression reduces plant stress, improving flowering and yield.</li>
+      <li>Predictable daily patterns allow optimized irrigation and nutrient management.</li>
+    </ul>
+
+    <!-- Crop Suitability Recommendations -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌾 Crop Suitability Recommendations</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌿 Crop Category</th>
+            <th class="px-4 py-2">🌾 Suitable Crops</th>
+            <th class="px-4 py-2">💡 Why They Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌾 Cereal Crops</td>
+            <td class="px-4 py-2">Maize, Sorghum, Millet</td>
+            <td class="px-4 py-2">Warm daytime conditions accelerate photosynthesis; mild pre-rain cooling supports grain filling.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">☘️ Legume Crops</td>
+            <td class="px-4 py-2">Soybean, Cowpea, Pigeon Pea</td>
+            <td class="px-4 py-2">Thrive under steady warmth and moderate humidity with predictable temperature cycles.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🍅 Vegetable Crops</td>
+            <td class="px-4 py-2">Tomato, Okra, Brinjal</td>
+            <td class="px-4 py-2">Benefit from gradual warming and mild evenings that support flowering and fruit development.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🍠 Root Crops</td>
+            <td class="px-4 py-2">Sweet Potato, Cassava</td>
+            <td class="px-4 py-2">Prefer stable daytime heat; consistent temperature aids in tuber enlargement.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌻 Oilseed Crops</td>
+            <td class="px-4 py-2">Sunflower, Groundnut</td>
+            <td class="px-4 py-2">Require strong sunlight for seed maturation and perform well under steady temperature rise.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Agricultural Recommendation Summary -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌱 Agricultural Recommendation Summary</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌬 Factor</th>
+            <th class="px-4 py-2">📊 Observation</th>
+            <th class="px-4 py-2">✅ Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Temperature Trend</td>
+            <td class="px-4 py-2">Linear increase throughout the day</td>
+            <td class="px-4 py-2">Schedule irrigation in cooler morning hours to minimize evaporation losses.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Rain Correlation</td>
+            <td class="px-4 py-2">Pre-rain temperatures slightly cooler</td>
+            <td class="px-4 py-2">Apply fertilizers and pest control before expected low-temperature days.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Crop Stress</td>
+            <td class="px-4 py-2">Low due to predictable warming</td>
+            <td class="px-4 py-2">Choose heat-tolerant but moisture-adaptive varieties for higher yield stability.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Solar Intensity</td>
+            <td class="px-4 py-2">Peaks in late afternoon</td>
+            <td class="px-4 py-2">Use mulching or intercropping to retain soil moisture and prevent heat stress.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Climate Predictability</td>
+            <td class="px-4 py-2">Highly stable temperature progression</td>
+            <td class="px-4 py-2">Encourages multi-season cropping and precise field management.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary Insight -->
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> Steady temperature rise through the day reflects a warm, semi-humid climate ideal for diversified agriculture. Predictable patterns minimize crop stress and support efficient irrigation, fertilizer, and crop rotation planning.
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    const divElement = document.getElementById('viz1756784822345');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

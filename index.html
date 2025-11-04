@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Insights Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .weather-card {
+            background: linear-gradient(135deg, rgba(27, 26, 26, 0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        .weather-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.1) 100%);
+        }
+        .page-container {
+            background: linear-gradient(135deg, #2c3E50 0%, #1c2a39 100%);
+            min-height: 100vh;
+        }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="container mx-auto px-6 py-12">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-bold text-white mb-4">🌦️ Visualization of Climate Variables and Rain Prediction for Agricultural Support</h1>
+                <p class="text-xl text-white/80 max-w-3xl mx-auto">
+                    Explore comprehensive weather patterns, trends, and predictions through interactive visualizations and data analysis
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                <a href="feature1.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">🌡️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Daily Temperature Trends</h3>
+                        <p class="text-white/70 text-sm">Line chart for MinTemp vs MaxTemp over time</p>
+                    </div>
+                </a>
+
+                <a href="feature2.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">💧</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Rainfall vs Evaporation</h3>
+                        <p class="text-white/70 text-sm">Dual-axis chart comparing rainfall and evaporation</p>
+                    </div>
+                </a>
+
+                <a href="feature3.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">☀️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Sunshine Duration</h3>
+                        <p class="text-white/70 text-sm">Bar chart showing sunshine hours per day</p>
+                    </div>
+                </a>
+
+                <a href="feature4.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">💨</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Wind Gust Speeds</h3>
+                        <p class="text-white/70 text-sm">Wind rose diagram for gust direction and speed</p>
+                    </div>
+                </a>
+
+                <a href="feature5.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">🌪️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Wind Speed Variations</h3>
+                        <p class="text-white/70 text-sm">Grouped bar chart comparing 9am vs 3pm wind speeds</p>
+                    </div>
+                </a>
+
+                <a href="feature6.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">💦</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Humidity Patterns</h3>
+                        <p class="text-white/70 text-sm">Scatter plot showing humidity variations throughout day</p>
+                    </div>
+                </a>
+
+                <a href="feature7.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Air Pressure Changes</h3>
+                        <p class="text-white/70 text-sm">Line chart for Pressure9am vs Pressure3pm</p>
+                    </div>
+                </a>
+
+                <a href="feature8.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">☁️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Cloud Cover Analysis</h3>
+                        <p class="text-white/70 text-sm">Stacked bar chart for Cloud9am vs Cloud3pm</p>
+                    </div>
+                </a>
+
+                <a href="feature9.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">🌡️💧</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Temperature vs Humidity</h3>
+                        <p class="text-white/70 text-sm">Scatter plot showing correlation between temp & humidity</p>
+                    </div>
+                </a>
+
+                <a href="feature10.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">🌧️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Rain Risk (RISK_MM) Trend</h3>
+                        <p class="text-white/70 text-sm">Pie chart showing percentage of rainy vs non-rainy days</p>
+                    </div>
+                </a>
+
+                <a href="feature11.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">⚠️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Rainfall vs RISK_MM</h3>
+                        <p class="text-white/70 text-sm">Histogram showing distribution of rainfall risk values</p>
+                    </div>
+                </a>
+
+                <a href="feature12.html">
+                    <div class="weather-card rounded-2xl p-6 cursor-pointer">
+                        <div class="text-4xl mb-4">🤖</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Prediction Dashboard</h3>
+                        <p class="text-white/70 text-sm">ML factors influencing RainTomorrow predictions</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

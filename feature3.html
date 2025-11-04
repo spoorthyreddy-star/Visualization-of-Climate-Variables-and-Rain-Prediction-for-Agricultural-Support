@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature 3: Sunshine Hours Analysis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background:#1c2a39; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.2); }
+    table, th, td { border: 1px solid rgba(255,255,255,0.3); border-collapse: collapse; }
+  </style>
+</head>
+
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white"> Feature 3: Analysis of Sunshine Hours Based on Next-Day Rain</h2>
+  
+  <div class="viz-container">
+    <!-- Tableau Visualization -->
+    <div class='tableauPlaceholder' id='viz1756765327616' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Distribution of Sunshine Hours Based on Next-Day Rain' 
+               src='https://public.tableau.com/static/images/B3/B3_17567653171960/DistributionofSunshineHoursBasedonNext-DayRain/1_rss.png' 
+               style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='B3_17567653171960/DistributionofSunshineHoursBasedonNext-DayRain' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/B3/B3_17567653171960/DistributionofSunshineHoursBasedonNext-DayRain/1.png' />
+      </object>
+    </div>
+
+    <!-- Visualization Interpretation -->
+    <h2 class="text-2xl font-semibold text-white mt-6 underline">🧩 Climate Interpretation</h2>
+    <ul class="list-disc list-inside mt-4 text-white text-base leading-relaxed space-y-2">
+      <li>Each bar in the chart represents sunshine hours for individual record IDs.</li>
+      <li>The color intensity (light → dark blue) indicates increasing sunshine duration — up to approximately <span class="font-semibold text-yellow-300">54.4 hours</span>.</li>
+      <li>Most records show high sunshine hours, implying consistent solar radiation and limited cloud cover.</li>
+      <li>A few records (such as IDs 3, 9, and 23) show comparatively lower sunlight duration.</li>
+      <li>Lower sunshine values correspond to days that precede rainfall — suggesting that next-day rain typically follows reduced sunshine hours.</li>
+      <li>The overall pattern reflects a climate dominated by long sunny periods and infrequent rainfall events.</li>
+    </ul>
+
+    <!-- Climatic Insights -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌤 Climatic Insights</h2>
+    <ul class="list-disc list-inside mt-3 text-white leading-relaxed space-y-2">
+      <li>The region experiences <span class="font-semibold text-yellow-300">long sunshine periods</span>, suggesting strong solar radiation and clear skies.</li>
+      <li>Next-day rain events are less frequent, indicating most days are dry and sunny.</li>
+      <li>These conditions align with <span class="font-semibold text-green-300">semi-arid to tropical dry climates</span>.</li>
+      <li>High temperatures and radiation levels result in greater evaporation and shorter wet spells.</li>
+    </ul>
+
+    <!-- Crop Suitability Recommendations -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌾 Crop Suitability Recommendations</h2>
+    
+
+    <!-- Crop Table -->
+    <div class="overflow-x-auto mt-5">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700">
+          <tr>
+            <th class="px-4 py-2">🌿 Crop Category</th>
+            <th class="px-4 py-2">🌾 Suitable Crops</th>
+            <th class="px-4 py-2">💡 Why They Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌽 Cereals</td>
+            <td class="px-4 py-2">Sorghum, Maize, Pearl millet (Bajra), Finger millet</td>
+            <td class="px-4 py-2">Thrive under strong sunlight and tolerate heat and intermittent drought.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌱 Pulses/Legumes</td>
+            <td class="px-4 py-2">Chickpea, Pigeon pea (Tur), Black gram, Green gram</td>
+            <td class="px-4 py-2">Require abundant sunlight for pod formation; low water demand.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌻 Oilseeds</td>
+            <td class="px-4 py-2">Sunflower, Groundnut, Sesame</td>
+            <td class="px-4 py-2">Long sunshine duration enhances oil accumulation in seeds.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🧅 Vegetables (Heat-tolerant)</td>
+            <td class="px-4 py-2">Tomato, Chili, Okra, Bottle gourd</td>
+            <td class="px-4 py-2">High sunlight promotes fruit growth and productivity.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🍉 Horticultural Crops</td>
+            <td class="px-4 py-2">Watermelon, Papaya, Guava, Pomegranate</td>
+            <td class="px-4 py-2">Grow well under strong solar radiation with controlled irrigation.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌾 Fiber Crops</td>
+            <td class="px-4 py-2">Cotton</td>
+            <td class="px-4 py-2">Requires long sunshine hours and dry weather for high-quality fiber formation.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">💡 Agricultural Recommendation Summary</h2>
+    <div class="overflow-x-auto mt-4">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700">
+          <tr>
+            <th class="px-4 py-2">🌦 Factor</th>
+            <th class="px-4 py-2">📊 Observation</th>
+            <th class="px-4 py-2">✅ Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Sunshine Hours</td>
+            <td class="px-4 py-2">High (up to 54 hrs cumulative)</td>
+            <td class="px-4 py-2">Select crops requiring strong solar radiation.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Rainfall (Next-Day)</td>
+            <td class="px-4 py-2">Mostly low</td>
+            <td class="px-4 py-2">Prefer drought-tolerant crops with short maturity cycles.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Temperature</td>
+            <td class="px-4 py-2">Likely high</td>
+            <td class="px-4 py-2">Adopt soil moisture conservation and shade-tolerant intercropping.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Best Practices</td>
+            <td class="px-4 py-2">Mulching, drip irrigation, intercropping with legumes</td>
+            <td class="px-4 py-2">Enhances soil fertility, reduces evaporation, and improves resilience.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Final Summary Insight -->
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> The visualization clearly reflects a region dominated by prolonged sunshine hours, limited rainfall, 
+      and high evaporation potential. These climatic traits make it ideal for cultivating heat-tolerant, drought-resilient, and 
+      sunlight-efficient crops such as <span class="font-semibold text-yellow-300">millets, pulses, oilseeds, and hardy fruit crops</span>. 
+      Sustainable practices like drip irrigation, mulching, and intercropping can enhance productivity and long-term soil health.
+    </p>
+
+  </div>
+
+  <!-- Tableau Script -->
+  <script type='text/javascript'>
+    const vizElement = document.getElementsByClassName('tableauViz')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (vizElement.parentElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

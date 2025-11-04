@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feature 1: Temperature Trends</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background: #1c2a39; padding: 1rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(238, 235, 235, 0.1); }
+    table, th, td { border: 1px solid rgba(255,255,255,0.3); border-collapse: collapse; }
+  </style>
+</head>
+
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white">
+    Feature 1: Temperature Trends (Min vs Max Temp over Record ID)
+  </h2>
+
+  <div class="viz-container">
+    <!-- Tableau Visualization -->
+    <div class="tableauPlaceholder" id="viz1756764243985" style="position: relative;">
+      <noscript>
+        <a href="#">
+          <img alt="Temperature Trends (Min vs Max Temp over Record ID)" 
+               src="https://public.tableau.com/static/images/Bo/Book2_17567642279300/TemperatureTrendsMinvsMaxTempoverRecordID/1_rss.png" 
+               style="border: none;" />
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="Book2_17567642279300/TemperatureTrendsMinvsMaxTempoverRecordID" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/Bo/Book2_17567642279300/TemperatureTrendsMinvsMaxTempoverRecordID/1.png" />
+      </object>
+    </div>
+
+    <!-- 🌤 Climate Interpretation -->
+    <h2 class="text-2xl font-semibold text-white mt-6 underline">🧩 Climate Interpretation</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>The <strong>Max Temperature (blue line)</strong> ranges from roughly 40°F to 120°F, indicating hot daytime conditions.</li>
+      <li>The <strong>Min Temperature (orange line)</strong> varies between 25°F and 70°F, showing significant nighttime cooling.</li>
+      <li>The large difference between day and night temperatures suggests <strong>high diurnal variation</strong>, typical of semi-arid or subtropical dry climates.</li>
+      <li>This indicates <strong>strong sunlight, low humidity, and limited rainfall</strong>—ideal for heat-tolerant, drought-resilient crops.</li>
+    </ul>
+
+    <!-- 🌤 Climate Insights -->
+    <h2 class="text-2xl font-semibold text-white mt-6 underline">🌤 Climate Insights</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li><strong>Temperature Range:</strong> Max up to 120°F, Min around 25°F–70°F.</li>
+      <li><strong>Climate Type:</strong> Semi-arid / tropical dry climate.</li>
+      <li><strong>Weather Characteristics:</strong> Hot days, cool nights, short wet periods.</li>
+      <li><strong>Farming Implications:</strong> Adopt crops that are heat-tolerant and require low water input. Irrigation and mulching practices recommended.</li>
+    </ul>
+
+    <!-- 🌾 Crop Suitability Recommendations -->
+    <h2 class="text-2xl font-semibold text-white mt-6 underline">🌾 Crop Suitability Recommendations</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌿 Crop Category</th>
+            <th class="px-4 py-2">🌾 Suitable Crops</th>
+            <th class="px-4 py-2">💡 Why They Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌾 Cereals</td>
+            <td class="px-4 py-2">Sorghum (Jowar), Pearl Millet (Bajra), Maize (Corn)</td>
+            <td class="px-4 py-2">Thrive in high heat and tolerate low rainfall; well-suited for semi-arid conditions.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌱 Pulses / Legumes</td>
+            <td class="px-4 py-2">Pigeon Pea (Tur), Chickpea (Gram), Green Gram (Moong), Black Gram (Urad)</td>
+            <td class="px-4 py-2">Require strong sunlight and minimal water; cool nights aid pod setting.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🥜 Oilseeds</td>
+            <td class="px-4 py-2">Groundnut (Peanut), Sesame, Sunflower</td>
+            <td class="px-4 py-2">Hot, dry weather enhances oil content and seed yield.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🥒 Vegetables (Heat-Tolerant)</td>
+            <td class="px-4 py-2">Tomato, Chili, Okra, Bottle Gourd, Bitter Gourd</td>
+            <td class="px-4 py-2">Adapted to warm climates; perform well under irrigation and full sun.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🍉 Fruits / Horticultural Crops</td>
+            <td class="px-4 py-2">Pomegranate, Guava, Papaya, Watermelon</td>
+            <td class="px-4 py-2">Favor warm days and cooler nights for fruit quality; drought-tolerant with irrigation.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌿 Fiber Crops</td>
+            <td class="px-4 py-2">Cotton</td>
+            <td class="px-4 py-2">Requires long sunshine hours and dry weather for fiber maturity.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 💡 Agricultural Recommendation Summary -->
+    <h2 class="text-2xl font-semibold text-white mt-6 underline">💡 Agricultural Recommendation Summary</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌦 Factor</th>
+            <th class="px-4 py-2">📊 Observation from Graph</th>
+            <th class="px-4 py-2">✅ Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Max Temperature</td>
+            <td class="px-4 py-2">70–120°F (Hot days)</td>
+            <td class="px-4 py-2">Grow crops that tolerate or benefit from heat stress.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Min Temperature</td>
+            <td class="px-4 py-2">25–70°F (Cool nights)</td>
+            <td class="px-4 py-2">Choose crops that thrive under wide day–night temperature variation.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Climate Type</td>
+            <td class="px-4 py-2">Semi-arid / Subtropical Dry</td>
+            <td class="px-4 py-2">Focus on drought- and heat-tolerant crop varieties.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Rainfall (Inferred)</td>
+            <td class="px-4 py-2">Likely low to moderate</td>
+            <td class="px-4 py-2">Use drip irrigation, mulching, and rainwater harvesting.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Sunlight</td>
+            <td class="px-4 py-2">Strong and consistent</td>
+            <td class="px-4 py-2">Favor crops with high sunlight requirements (e.g., Cotton, Sunflower).</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Best Practices</td>
+            <td class="px-4 py-2">Soil moisture varies due to heat</td>
+            <td class="px-4 py-2">Use intercropping, crop rotation, and mulching to retain moisture and fertility.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> The observed temperature trends indicate a <strong>semi-arid climate</strong> with <strong>hot days, cool nights, and variable rainfall</strong>. 
+      Ideal crops include <strong>Sorghum, Pearl Millet, Groundnut, Cotton, Pigeon Pea, and Pomegranate</strong>, while <strong>Tomato, Maize, and Watermelon</strong> perform well under irrigated conditions.
+    </p>
+  </div>
+
+  <!-- Tableau Script -->
+  <script type="text/javascript">
+    const vizElement = document.getElementsByClassName("tableauViz")[0];
+    vizElement.style.width = "100%";
+    vizElement.style.height = (vizElement.parentElement.offsetWidth * 0.75) + "px";
+    const scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

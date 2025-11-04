@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature 5: Wind Speed at 9am vs 3pm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background:#1c2a39; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    table, th, td { border: 1px solid rgba(255,255,255,0.3); border-collapse: collapse; }
+  </style>
+</head>
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white">Feature 5: Wind Speed at 9am vs 3pm</h2>
+
+  <div class="viz-container">
+    <!-- Tableau Visualization -->
+    <div class="tableauPlaceholder" id="viz1756784266425" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="Wind Speed at 9am vs 3pm"
+            src="https://public.tableau.com/static/images/B5/B5_17567654210830/WindSpeedat9amvs3pm/1_rss.png"
+            style="border: none"/>
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+        <param name="embed_code_version" value="3"/>
+        <param name="site_root" value=""/>
+        <param name="name" value="B5_17567654210830/WindSpeedat9amvs3pm"/>
+        <param name="tabs" value="no"/>
+        <param name="toolbar" value="yes"/>
+        <param name="static_image" value="https://public.tableau.com/static/images/B5/B5_17567654210830/WindSpeedat9amvs3pm/1.png"/>
+        <param name="animate_transition" value="yes"/>
+        <param name="display_static_image" value="yes"/>
+        <param name="display_spinner" value="yes"/>
+        <param name="display_overlay" value="yes"/>
+        <param name="display_count" value="yes"/>
+        <param name="language" value="en-US"/>
+      </object>
+    </div>
+
+    <!-- Climate Interpretation -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌤 Climate Interpretation</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>The graph indicates that wind speeds are higher at 3pm compared to 9am, reflecting strong afternoon convection.</li>
+      <li>This suggests a dry and warm daytime climate typical of semi-arid or tropical regions.</li>
+      <li>Morning calm followed by afternoon gusts indicates pressure-driven temperature variations.</li>
+      <li>High winds correlate with increased evaporation potential and reduced moisture retention.</li>
+    </ul>
+
+    <!-- Climate Insights -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🔍 Climatic Insights</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>Afternoon wind acceleration leads to higher evaporation and faster soil moisture loss.</li>
+      <li>High wind turbulence can increase dust movement, impacting crop leaves and photosynthesis.</li>
+      <li>Morning hours offer favorable conditions for irrigation and pesticide application.</li>
+      <li>Consistent strong winds may cause mechanical stress to tall or fragile crops.</li>
+    </ul>
+
+    <!-- Crop Suitability Recommendations -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌾 Crop Suitability Recommendations</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌿 Crop Category</th>
+            <th class="px-4 py-2">🌾 Suitable Crops</th>
+            <th class="px-4 py-2">💡 Why They Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌾 Cereal Crops</td>
+            <td class="px-4 py-2">Sorghum, Pearl Millet</td>
+            <td class="px-4 py-2">Wind-resistant and adapted to dry, hot climates</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌱 Legumes</td>
+            <td class="px-4 py-2">Cowpea, Chickpea</td>
+            <td class="px-4 py-2">Short canopy height; tolerate windy, dry conditions</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🥜 Oilseeds</td>
+            <td class="px-4 py-2">Groundnut, Sesame</td>
+            <td class="px-4 py-2">Thrive in semi-arid zones; less affected by wind</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🍉 Horticultural Crops</td>
+            <td class="px-4 py-2">Guava, Pomegranate</td>
+            <td class="px-4 py-2">Hardy perennials; tolerate moderate wind if supported</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🏭 Industrial Crops</td>
+            <td class="px-4 py-2">Cotton, Castor</td>
+            <td class="px-4 py-2">Deep-rooted and suitable for windy, dry climates</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Agricultural Recommendation Summary -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌱 Agricultural Recommendation Summary</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌬 Factor</th>
+            <th class="px-4 py-2">📊 Observation</th>
+            <th class="px-4 py-2">✅ Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Wind Speed Variation</td>
+            <td class="px-4 py-2">Stronger winds observed in afternoon hours</td>
+            <td class="px-4 py-2">Perform irrigation and spraying in early mornings</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Evaporation Impact</td>
+            <td class="px-4 py-2">High winds increase moisture loss</td>
+            <td class="px-4 py-2">Use mulching or windbreaks to retain soil moisture</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Crop Stability</td>
+            <td class="px-4 py-2">Tall crops may suffer mechanical stress</td>
+            <td class="px-4 py-2">Stake or support tall plants to prevent lodging</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Soil Erosion Risk</td>
+            <td class="px-4 py-2">Wind may erode topsoil in open fields</td>
+            <td class="px-4 py-2">Use shelterbelts or cover crops for protection</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Water Use Efficiency</td>
+            <td class="px-4 py-2">Afternoon irrigation less effective</td>
+            <td class="px-4 py-2">Irrigate early morning for better absorption</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary Insight -->
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> Afternoon winds are significantly stronger than morning winds, 
+      indicating high evaporation and potential crop stress. Prioritizing hardy crops, morning irrigation, 
+      and windbreaks ensures sustainable farming under such windy, dry conditions.
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    const divElement = document.getElementById('viz1756784266425');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

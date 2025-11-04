@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature 6: Humidity Comparison (9am vs 3pm)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background:#1c2a39; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    table, th, td { border: 1px solid rgba(255,255,255,0.3); border-collapse: collapse; }
+  </style>
+</head>
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white">Feature 6: Humidity Comparison (9am vs 3pm)</h2>
+
+  <div class="viz-container">
+    <!-- Tableau Visualization -->
+    <div class="tableauPlaceholder" id="viz1756784391100" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="Humidity Comparison (9am vs 3pm)"
+            src="https://public.tableau.com/static/images/B6/B6_17567655111010/HumidityComparison9amvs3pm/1_rss.png"
+            style="border: none"/>
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+        <param name="embed_code_version" value="3"/>
+        <param name="site_root" value=""/>
+        <param name="name" value="B6_17567655111010/HumidityComparison9amvs3pm"/>
+        <param name="tabs" value="no"/>
+        <param name="toolbar" value="yes"/>
+        <param name="static_image" value="https://public.tableau.com/static/images/B6/B6_17567655111010/HumidityComparison9amvs3pm/1.png"/>
+        <param name="animate_transition" value="yes"/>
+        <param name="display_static_image" value="yes"/>
+        <param name="display_spinner" value="yes"/>
+        <param name="display_overlay" value="yes"/>
+        <param name="display_count" value="yes"/>
+        <param name="language" value="en-US"/>
+      </object>
+    </div>
+
+    <!-- Climate Interpretation -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌤 Climate Interpretation</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>The heatmap compares morning (9am) and afternoon (3pm) humidity values, highlighting variations in moisture levels.</li>
+      <li>Lower afternoon humidity suggests higher daytime temperatures and stronger evaporation rates.</li>
+      <li>Morning humidity peaks reflect dew formation and cooler conditions before sunlight intensifies.</li>
+      <li>Regions with minimal difference may indicate coastal or consistently humid environments.</li>
+    </ul>
+
+    <!-- Climatic Insights -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🔍 Climatic Insights</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>Afternoon humidity drops indicate strong solar radiation and low relative moisture retention.</li>
+      <li>High humidity consistency throughout the day favors fungal growth and plant diseases.</li>
+      <li>Areas with sharp humidity decline benefit from crops with drought tolerance and deep root systems.</li>
+      <li>Monitoring humidity difference aids in irrigation planning and pest control timing.</li>
+    </ul>
+
+    <!-- Crop Suitability Recommendations -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌾 Crop Suitability Recommendations</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌿 Crop Category</th>
+            <th class="px-4 py-2">🌾 Suitable Crops</th>
+            <th class="px-4 py-2">💡 Why They Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌾 Cereal Crops</td>
+            <td class="px-4 py-2">Maize, Wheat</td>
+            <td class="px-4 py-2">Adapted to moderate humidity variations and responsive to irrigation.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌱 Legumes</td>
+            <td class="px-4 py-2">Soybean, Green Gram</td>
+            <td class="px-4 py-2">Perform well under alternating humidity; nitrogen-fixing improves dry soil resilience.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🥒 Vegetables</td>
+            <td class="px-4 py-2">Okra, Tomato</td>
+            <td class="px-4 py-2">Prefer moderate humidity; excessive moisture avoided by afternoon drying.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🍍 Horticultural Crops</td>
+            <td class="px-4 py-2">Banana, Papaya</td>
+            <td class="px-4 py-2">Thrive in humid morning conditions with steady moisture availability.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🏭 Industrial Crops</td>
+            <td class="px-4 py-2">Sugarcane, Cotton</td>
+            <td class="px-4 py-2">Require balanced humidity levels and tolerate dry afternoons.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Agricultural Recommendation Summary -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌱 Agricultural Recommendation Summary</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌬 Factor</th>
+            <th class="px-4 py-2">📊 Observation</th>
+            <th class="px-4 py-2">✅ Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Humidity Variation</td>
+            <td class="px-4 py-2">Lower humidity at 3pm compared to 9am</td>
+            <td class="px-4 py-2">Schedule irrigation early morning or late evening to minimize loss</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Evaporation Rate</td>
+            <td class="px-4 py-2">Higher in the afternoon due to heat</td>
+            <td class="px-4 py-2">Use mulching or canopy cover to reduce moisture evaporation</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Crop Stress</td>
+            <td class="px-4 py-2">Afternoon dryness can stress shallow-rooted crops</td>
+            <td class="px-4 py-2">Select deep-rooted or drought-tolerant crop varieties</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Disease Control</td>
+            <td class="px-4 py-2">High morning humidity may encourage fungal infections</td>
+            <td class="px-4 py-2">Ensure good field ventilation and apply fungicides early morning</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Irrigation Efficiency</td>
+            <td class="px-4 py-2">Afternoon irrigation leads to quick evaporation</td>
+            <td class="px-4 py-2">Adopt drip irrigation for better water efficiency</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary Insight -->
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> Afternoon humidity drops significantly compared to mornings, 
+      indicating high evaporation and dry air dominance during the day. Adopting early irrigation, 
+      moisture-conserving practices, and humidity-adapted crops can help sustain productivity in such climates.
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    const divElement = document.getElementById('viz1756784391100');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

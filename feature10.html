@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature 10: Rain Risk (RISK_MM) Trend</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background:#1c2a39; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    table, th, td { border: 1px solid rgba(255,255,255,0.3); border-collapse: collapse; }
+  </style>
+</head>
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white">Feature 10: Rain Risk (RISK_MM) Trend</h2>
+
+  <div class="viz-container">
+    <!-- Tableau Visualization -->
+    <div class="tableauPlaceholder" id="viz1756784931808" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="Rain Risk (RISK_MM) Trend"
+            src="https://public.tableau.com/static/images/B1/B10_17567657018150/RainRiskRISK_MMTrend/1_rss.png"
+            style="border: none"/>
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+        <param name="embed_code_version" value="3"/>
+        <param name="site_root" value=""/>
+        <param name="name" value="B10_17567657018150/RainRiskRISK_MMTrend"/>
+        <param name="tabs" value="no"/>
+        <param name="toolbar" value="yes"/>
+        <param name="static_image" value="https://public.tableau.com/static/images/B1/B10_17567657018150/RainRiskRISK_MMTrend/1.png"/>
+        <param name="animate_transition" value="yes"/>
+        <param name="display_static_image" value="yes"/>
+        <param name="display_spinner" value="yes"/>
+        <param name="display_overlay" value="yes"/>
+        <param name="display_count" value="yes"/>
+        <param name="language" value="en-US"/>
+      </object>
+    </div>
+
+    <!-- Climate Interpretation -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌤 Climate Interpretation</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>Rainfall risk (RISK_MM) shows sharp spikes separated by long dry intervals.</li>
+      <li>Indicates short-duration heavy rains followed by extended dry spells — a sign of semi-arid to sub-humid climate behavior.</li>
+      <li>Uneven rainfall suggests seasonal monsoon influence with poor rain predictability.</li>
+      <li>Requires crops and practices suited to intermittent moisture availability and rapid drainage.</li>
+    </ul>
+
+    <!-- Climatic Insights -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🔍 Climatic Insights</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>Heavy rainfall bursts replenish soil moisture quickly but risk runoff and erosion.</li>
+      <li>Extended dry phases limit consistent water supply, challenging sensitive crops.</li>
+      <li>Moisture fluctuations affect nutrient absorption and soil microbial activity.</li>
+      <li>Adapting drought- and flood-tolerant cropping systems ensures climate resilience.</li>
+    </ul>
+
+    <!-- Crop Suitability Recommendations -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌾 Crop Suitability Recommendations</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌿 Crop Category</th>
+            <th class="px-4 py-2">🌾 Suitable Crops</th>
+            <th class="px-4 py-2">💡 Why They Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌾 Cereal Crops</td>
+            <td class="px-4 py-2">Maize, Sorghum, Pearl Millet</td>
+            <td class="px-4 py-2">Thrive in irregular rainfall; tolerate drought and utilize moisture efficiently.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🫘 Pulse Crops</td>
+            <td class="px-4 py-2">Pigeon Pea, Cowpea, Green Gram</td>
+            <td class="px-4 py-2">Low water requirement and improve soil fertility through nitrogen fixation.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🍠 Root & Tuber Crops</td>
+            <td class="px-4 py-2">Sweet Potato, Cassava, Yam</td>
+            <td class="px-4 py-2">Store water in tubers and adapt to uneven rainfall distribution.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌻 Oilseed Crops</td>
+            <td class="px-4 py-2">Groundnut, Sesame, Sunflower</td>
+            <td class="px-4 py-2">Withstand dry intervals; suitable for semi-arid rainfall patterns.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🥦 Vegetable Crops</td>
+            <td class="px-4 py-2">Okra, Chilli, Tomato</td>
+            <td class="px-4 py-2">Grow well under controlled irrigation and benefit from intermittent moisture.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌾 Fodder Crops</td>
+            <td class="px-4 py-2">Napier Grass, Guinea Grass</td>
+            <td class="px-4 py-2">Utilize heavy rainfall periods for biomass growth and endure brief droughts.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Agricultural Recommendation Summary -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌱 Agricultural Recommendation Summary</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌬 Factor</th>
+            <th class="px-4 py-2">📊 Observation</th>
+            <th class="px-4 py-2">✅ Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Rainfall Pattern</td>
+            <td class="px-4 py-2">Highly variable with heavy peaks</td>
+            <td class="px-4 py-2">Construct farm ponds and contour bunds to capture excess runoff.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Soil Condition</td>
+            <td class="px-4 py-2">Erosion risk during rain spikes</td>
+            <td class="px-4 py-2">Use mulching and cover cropping to stabilize topsoil.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Water Availability</td>
+            <td class="px-4 py-2">Uneven moisture across season</td>
+            <td class="px-4 py-2">Implement drip irrigation and moisture-retaining soil practices.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Crop Water Demand</td>
+            <td class="px-4 py-2">Mismatch with rainfall timing</td>
+            <td class="px-4 py-2">Grow drought-tolerant, short-duration varieties.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Drainage Need</td>
+            <td class="px-4 py-2">High during intense rain events</td>
+            <td class="px-4 py-2">Establish raised beds and field drainage channels.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Climate Predictability</td>
+            <td class="px-4 py-2">Low rainfall consistency</td>
+            <td class="px-4 py-2">Rely on seasonal forecasts and flexible sowing schedules.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary Insight -->
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> The rainfall trend reflects <strong>episodic heavy rains followed by dry spells</strong>, typical of semi-arid transitional climates. 
+      <strong>Moisture-efficient crops and adaptive water conservation practices</strong> ensure sustainable productivity and climate resilience.
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    const divElement = document.getElementById('viz1756784931808');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

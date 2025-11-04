@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature 4: Wind Gust Speed vs Wind Direction</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background:#1c2a39; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white">Feature 4: Wind Gust Speed vs Wind Direction</h2>
+  <div class="viz-container">
+    <div class='tableauPlaceholder' id='viz1756784135630' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Wind Gust Speed vs Wind Direction'
+               src='https://public.tableau.com/static/images/B4/B4_17567653656450/WindGustSpeedvsWindDirection/1_rss.png'
+               style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='B4_17567653656450/WindGustSpeedvsWindDirection' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/B4/B4_17567653656450/WindGustSpeedvsWindDirection/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+
+    <h2 class="text-2xl font-semibold text-white mt-6 underline">🌬️ Climate Interpretation</h2>
+
+    <ul class="list-disc pl-6 mt-4 text-white text-base leading-relaxed space-y-2">
+      <li>The visualization shows how wind gust speeds vary with direction using color-coded vertical bars.</li>
+      <li>Stronger gusts are concentrated in <strong>north-western (NW)</strong> and <strong>west-northwest (WNW)</strong> directions.</li>
+      <li>Lower gust intensities are observed from <strong>east-southeast (ESE)</strong> and <strong>south-southwest (SSW)</strong> directions.</li>
+      <li>The directional pattern indicates that regional geography influences how winds accelerate and channel through specific paths.</li>
+      <li>Higher gusts from NW–WNW are typical of <span class="font-semibold text-yellow-300">dry continental winds</span> seen in semi-arid regions.</li>
+      <li>Reduced gusts from E–SE may correspond to <span class="font-semibold text-green-300">occasional moist airflows</span> from oceanic or lowland sources.</li>
+      <li>This variation suggests seasonal wind dominance — strong dry winds during pre-monsoon months and lighter breezes during moist phases.</li>
+      <li>Overall, the region likely experiences alternating dry, windy spells and brief calm intervals consistent with <span class="font-semibold text-blue-300">tropical dry climates</span>.</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold text-white mt-6 underline">🌤 Climatic Insights</h3>
+    <ul class="list-disc pl-6 mt-3 text-white space-y-2">
+      <li>High gust speeds from <strong>NW and WNW</strong> directions indicate exposure to dry, desiccating winds typical of semi-arid zones.</li>
+      <li>Moderate gusts from <strong>E and NE</strong> may bring occasional moist airflows, offering slight cooling or rainfall.</li>
+      <li>Frequent gusts lead to increased <strong>evapotranspiration</strong> and <strong>soil moisture loss</strong>.</li>
+      <li>The pattern suggests alternating calm and windy phases, typical of dry tropical climates.</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold text-white mt-6 underline">🌾 Crop Suitability Recommendations</h3>
+
+    <table class="w-full text-white text-left text-sm border border-gray-400 mt-4">
+      <thead class="bg-gray-700 text-white">
+        <tr>
+          <th class="py-2 px-4 border border-gray-400">🌿Crop Category</th>
+          <th class="py-2 px-4 border border-gray-400">🌾Suitable Crops</th>
+          <th class="py-2 px-4 border border-gray-400">💡Why They Fit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">🌽 Cereals</td>
+          <td class="py-2 px-4 border border-gray-400">Sorghum, Maize (short hybrids), Pearl Millet (Bajra)</td>
+          <td class="py-2 px-4 border border-gray-400">Strong stems and deep roots resist lodging from gusts</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">🌱 Pulses / Legumes</td>
+          <td class="py-2 px-4 border border-gray-400">Chickpea, Cowpea, Green Gram, Lentil</td>
+          <td class="py-2 px-4 border border-gray-400">Low height and high resilience to dry winds</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">🌻 Oilseeds</td>
+          <td class="py-2 px-4 border border-gray-400">Groundnut, Sesame, Mustard</td>
+          <td class="py-2 px-4 border border-gray-400">Adapt to low rainfall and windy conditions</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">🧅 Vegetables</td>
+          <td class="py-2 px-4 border border-gray-400">Onion, Garlic, Chili, Okra</td>
+          <td class="py-2 px-4 border border-gray-400">Compact, wind-tolerant crops suited for semi-arid climates</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">🍉 Fruit Crops</td>
+          <td class="py-2 px-4 border border-gray-400">Guava, Ber, Pomegranate, Papaya (with support)</td>
+          <td class="py-2 px-4 border border-gray-400">Thrive under sunny, windy, and dry conditions</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">🌾 Fiber Crops</td>
+          <td class="py-2 px-4 border border-gray-400">Cotton (short-stem varieties)</td>
+          <td class="py-2 px-4 border border-gray-400">Tolerant to wind if planted with shelter belts</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="text-2xl font-semibold text-white mt-6 underline">💡 Agricultural Recommendation Summary</h3>
+
+    <table class="w-full text-white text-left text-sm border border-gray-400 mt-4">
+      <thead class="bg-gray-700 text-white">
+        <tr>
+          <th class="py-2 px-4 border border-gray-400">🌦Factor</th>
+          <th class="py-2 px-4 border border-gray-400">📊Observation</th>
+          <th class="py-2 px-4 border border-gray-400">✅Recommendation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">Wind Gusts</td>
+          <td class="py-2 px-4 border border-gray-400">Strong from NW & WNW</td>
+          <td class="py-2 px-4 border border-gray-400">Establish windbreaks (Casuarina, Eucalyptus) on western boundaries</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">Soil Erosion</td>
+          <td class="py-2 px-4 border border-gray-400">Moderate to high risk</td>
+          <td class="py-2 px-4 border border-gray-400">Use contour bunding or mulching to retain topsoil</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">Moisture Loss</td>
+          <td class="py-2 px-4 border border-gray-400">High due to strong winds</td>
+          <td class="py-2 px-4 border border-gray-400">Adopt drip irrigation and cover crops to conserve moisture</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">Crop Selection</td>
+          <td class="py-2 px-4 border border-gray-400">Wind & drought-tolerant</td>
+          <td class="py-2 px-4 border border-gray-400">Prefer hardy cereals, pulses, and oilseeds</td>
+        </tr>
+        <tr class="border-t border-gray-400">
+          <td class="py-2 px-4 border border-gray-400">Timing</td>
+          <td class="py-2 px-4 border border-gray-400">Strong winds during dry season</td>
+          <td class="py-2 px-4 border border-gray-400">Adjust sowing dates to avoid critical growth during gust periods</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> The chart clearly indicates dominant dry conditions with high evaporation and low rainfall, 
+      making millets, pulses, oilseeds, and hardy fruit crops the most suitable for sustainable cultivation in this region.
+    </p>
+
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1756784135630');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

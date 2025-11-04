@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature 12: Overall Rain Prediction Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #1c2a39; padding: 1rem; }
+    .viz-container { background:#1c2a39; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    table, th, td { border: 1px solid rgba(255,255,255,0.3); border-collapse: collapse; }
+  </style>
+</head>
+<body>
+  <h2 class="text-2xl font-bold mb-4 text-white">Feature 12: Overall Rain Prediction Dashboard</h2>
+
+  <div class="viz-container">
+    <!-- Tableau Visualization -->
+    <div class='tableauPlaceholder' id='viz1756785227198' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Overall Rain Prediction Dashboard' 
+               src='https://public.tableau.com/static/images/B1/B12_17567658267770/OverallRainPredictionDashboard/1_rss.png' 
+               style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='B12_17567658267770/OverallRainPredictionDashboard' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/B1/B12_17567658267770/OverallRainPredictionDashboard/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+
+    <!-- Climate Interpretation -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌤 Climate Interpretation</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>Evaporation and rainfall show an inverse relationship — high evaporation corresponds to dry conditions, while elevated rainfall coincides with low evaporation.</li>
+      <li>Orange zones (Yes) indicate humid, moisture-laden periods that often precede rainfall events.</li>
+      <li>Blue zones (No) reflect dry, high-evaporation phases typical of pre-rain or post-rain intervals.</li>
+      <li>The alternating pattern of evaporation and rainfall indicates a transitional monsoon climate, characterized by irregular precipitation cycles.</li>
+      <li>High evaporation before rainfall suggests heat accumulation, which can trigger convectional rainstorms.</li>
+      <li>Continuous evaporation without rain can result in soil moisture depletion and crop stress, especially in rainfed fields.</li>
+      <li>The climate demonstrates cyclic wet and dry spells, supporting mixed farming practices combining rainfed and irrigated crops.</li>
+      <li>Efficient water management is essential — storing rainwater during wet phases ensures moisture availability during subsequent dry spells.</li>
+      <li>Such alternating conditions highlight the importance of adaptive cropping calendars aligned with moisture and temperature variability.</li>
+      <li>Overall, the pattern reflects a semi-humid to sub-humid regime, requiring balanced soil-water conservation strategies for sustainable agriculture.</li>
+    </ul>
+
+    <!-- Climatic Insights -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🔍 Climatic Insights</h2>
+    <ul class="mt-4 text-white text-base leading-relaxed list-disc list-inside space-y-2">
+      <li>High evaporation followed by rainfall implies strong diurnal temperature variation and convective rainfall events.</li>
+      <li>Alternating blue (No) and orange (Yes) phases confirm an unstable hydrological regime typical of semi-humid monsoonal areas.</li>
+      <li>Moisture stress likely builds up during prolonged high evaporation periods.</li>
+      <li>Water surplus during rain peaks could cause surface runoff and minor flooding.</li>
+      <li>Requires integrated water and crop planning to match moisture cycles with crop growth stages.</li>
+    </ul>
+
+    <!-- Crop Suitability Recommendations -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌾 Crop Suitability Recommendations</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌿 Crop Category</th>
+            <th class="px-4 py-2">🌾 Suitable Crops</th>
+            <th class="px-4 py-2">💡 Why They Fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🌾 Cereal Crops</td>
+            <td class="px-4 py-2">Rice, Maize</td>
+            <td class="px-4 py-2">Rice benefits from rainy intervals; Maize endures high evaporation and dry breaks.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🫘 Pulse Crops</td>
+            <td class="px-4 py-2">Green Gram, Black Gram</td>
+            <td class="px-4 py-2">Thrive under variable moisture; enrich soil with nitrogen during dry cycles.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🥔 Root & Tuber Crops</td>
+            <td class="px-4 py-2">Cassava, Sweet Potato</td>
+            <td class="px-4 py-2">Store water underground and resist moisture fluctuation.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌻 Oilseed Crops</td>
+            <td class="px-4 py-2">Groundnut, Sesame</td>
+            <td class="px-4 py-2">Perform well under hot, dry phases; low water requirement.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">🥦 Vegetable Crops</td>
+            <td class="px-4 py-2">Tomato, Brinjal, Okra</td>
+            <td class="px-4 py-2">Adapt to moderate humidity and controlled irrigation cycles.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">🌿 Fodder Crops</td>
+            <td class="px-4 py-2">Napier Grass, Sorghum</td>
+            <td class="px-4 py-2">Grow rapidly post-rain; withstand dry phases effectively.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Agricultural Recommendation Summary -->
+    <h2 class="text-2xl font-semibold text-white mt-8 underline">🌱 Agricultural Recommendation Summary</h2>
+    <div class="overflow-x-auto mt-3">
+      <table class="w-full text-white text-left text-sm border border-gray-400">
+        <thead class="bg-gray-700 text-white">
+          <tr>
+            <th class="px-4 py-2">🌬 Factor</th>
+            <th class="px-4 py-2">📊 Observation</th>
+            <th class="px-4 py-2">✅ Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Evaporation Pattern</td>
+            <td class="px-4 py-2">High evaporation during dry spells</td>
+            <td class="px-4 py-2">Apply mulching and reduce field exposure to conserve moisture.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Rainfall Distribution</td>
+            <td class="px-4 py-2">Uneven but significant during “Yes” phases</td>
+            <td class="px-4 py-2">Implement rainwater harvesting through farm ponds and bunds.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Soil Moisture</td>
+            <td class="px-4 py-2">Alternating wet and dry cycles</td>
+            <td class="px-4 py-2">Use organic matter to enhance water retention capacity.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Crop Water Demand</td>
+            <td class="px-4 py-2">Mismatch with rainfall timing</td>
+            <td class="px-4 py-2">Choose drought-tolerant and short-duration crop varieties.</td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="px-4 py-2">Temperature Fluctuation</td>
+            <td class="px-4 py-2">Heat buildup drives evaporation</td>
+            <td class="px-4 py-2">Adopt shade nets or intercrops to reduce thermal stress.</td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="px-4 py-2">Waterlogging Risk</td>
+            <td class="px-4 py-2">High during rainfall peaks</td>
+            <td class="px-4 py-2">Ensure field drains or raised bed cultivation to prevent damage.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary Insight -->
+    <p class="mt-6 text-white text-base leading-relaxed">
+      ✅ <strong>Summary Insight:</strong> The visualization reveals alternating evaporation and rainfall phases, characteristic of a monsoon-transition climate. Managing moisture efficiently through rainwater storage, soil conservation, and crop diversification enhances agricultural resilience and productivity.
+    </p>
+  </div>
+
+  <script type='text/javascript'>
+    const divElement = document.getElementById('viz1756785227198');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>
