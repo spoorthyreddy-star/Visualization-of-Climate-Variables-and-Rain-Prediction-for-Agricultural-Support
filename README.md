@@ -150,6 +150,8 @@ The final deliverable is an **interactive and operational web dashboard** that:
 **Based on the research paper:**
 *Ashutosh Shankhdhar (SMART–2022 IEEE Conference, ID: 55829)*
 
+Now live at: https://visualization-of-climate-variables.vercel.app/ 
+
 ---
 
 ### 💡 Summary
